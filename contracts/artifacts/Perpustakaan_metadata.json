@@ -1,0 +1,296 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "pengarang",
+						"type": "string"
+					}
+				],
+				"name": "BukuDihapus",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "pengarang",
+						"type": "string"
+					}
+				],
+				"name": "BukuDiperbarui",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "pengarang",
+						"type": "string"
+					}
+				],
+				"name": "BukuDitambahkan",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "books",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "pengarang",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ISBN",
+						"type": "uint256"
+					}
+				],
+				"name": "dapatkanBukuDariISBN",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "ISBN",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "judul",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tahun",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "pengarang",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Perpustakaan.Buku",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ISBN",
+						"type": "uint256"
+					}
+				],
+				"name": "hapusBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_pengarang",
+						"type": "string"
+					}
+				],
+				"name": "tambahBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ISBN",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_pengarang",
+						"type": "string"
+					}
+				],
+				"name": "updateBuku",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Perpustakaan.sol": "Perpustakaan"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Perpustakaan.sol": {
+			"keccak256": "0x045f7f93d9e9ffb7f5fa342cc6e946e8ece2c6acb50312fff5e48dc0f79df840",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://b57017f4f687451205390c9e25a85a3fc16e51dfac0785c4ac945c6ecf31e182",
+				"dweb:/ipfs/QmWUQFP9yg2utawf6bS3yjEPUnGic2VAHj2Gcc7vKbmdoK"
+			]
+		}
+	},
+	"version": 1
+}

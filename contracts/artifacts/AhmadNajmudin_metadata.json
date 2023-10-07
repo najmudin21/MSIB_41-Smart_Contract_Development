@@ -1,0 +1,220 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					}
+				],
+				"name": "BookAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					}
+				],
+				"name": "BookDeleted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					}
+				],
+				"name": "BookUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"name": "addBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					}
+				],
+				"name": "deleteBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllISBNs",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					}
+				],
+				"name": "getBookInfo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "judul",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahun",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					}
+				],
+				"name": "isBookExists",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "isbn",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "judul2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tahun2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "penulis2",
+						"type": "string"
+					}
+				],
+				"name": "updateBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Perpustakaan.sol": "AhmadNajmudin"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Perpustakaan.sol": {
+			"keccak256": "0x6e8621e3eb78ea7b74cf758ccd379d371eb92fa7d1b8590e95be3fe9949c6d21",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://33c1fa1572cc63f02abe8604cc57bec272b8135e666ba0a655aca2faab021834",
+				"dweb:/ipfs/QmbWVDs91aAgLgSpwq4Agh6ZN2Man2xoQPQHu9nFRzf6Kz"
+			]
+		}
+	},
+	"version": 1
+}
